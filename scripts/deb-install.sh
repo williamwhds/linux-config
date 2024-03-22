@@ -30,5 +30,9 @@ sudo apt-get install zsh -y
 # ripgrep
 sudo apt-get install ripgrep -y
 
+# github cli
+sudo apt-get install gh -y
+
 # rustup
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+
