@@ -1,14 +1,16 @@
 #!/bin/bash
 
 # Stops sudo from changing $HOME to /root/
-USER_HOME=$(eval echo ~$USER)
+username=$SUDO_USER
+home="/home/$username"
+echo $home
 
 # copy dotfiles from this repo to home directory
-cp -r ../dotfiles/. $USER
+cp -r ../dotfiles/. $home
 
 # copy applications from this repo to home directory
-cp -r ../applications $USER
-mv $USER/applications $USER/Applications
+cp -r ../applications $home
+mv $home/applications $home/Applications
 
 # making symbolic links from applications to /usr/local/bin
-sudo ln -s ~/Applications/* /usr/local/bin/
+sudo ln -s $home/Applications/* /usr/local/bin/
