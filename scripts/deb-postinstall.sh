@@ -14,3 +14,6 @@ mv $home/applications $home/Applications
 
 # making symbolic links from applications to /usr/local/bin
 sudo ln -s $home/Applications/* /usr/local/bin/
+
+# renaming nvim so I can access it from terminal
+mv /usr/local/bin/nvim.appimage /usr/local/bin/nvim
