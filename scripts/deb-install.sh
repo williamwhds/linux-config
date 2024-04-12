@@ -42,6 +42,9 @@ sudo apt-get install gh -y
 # NetworkManager
 sudo apt-get install network-manager -y
 
+# curl
+sudo apt-get install curl
+
 # rustup
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
