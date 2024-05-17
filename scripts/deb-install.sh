@@ -15,8 +15,8 @@ sudo apt-get install alacritty -y
 # nitrogen
 sudo apt-get install nitrogen -y
 
-# firefox-esr
-sudo apt-get install firefox-esr -y
+# firefox
+sudo apt-get install firefox -y
 
 # thunar
 sudo apt-get install thunar -y
